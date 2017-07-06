@@ -6,6 +6,6 @@ Obtained in KML format off all municipalities of Cuba
 **Install node dependencies**
 `npm install` </br>
 
-**Run into console**
+**Run**
 `node index.js`
 
