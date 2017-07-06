@@ -10,12 +10,12 @@ dowload(url, 'input')
     .then(function (e) {
       xml2json({
         input: 'input/doc.kml',
-        output: 'output/doc.json'
+        output: 'output/response.json'
       }, function (e, result) {
         if (e) {
           throw e;
         } else {
-          fs.readFile('output/doc.json', 'utf8', dataLoaded);
+          fs.readFile('output/response.json', 'utf8', dataLoaded);
 
           function dataLoaded(err, data) {
             var province = JSON.parse(data).kml.Document.Folder;
@@ -35,7 +35,7 @@ dowload(url, 'input')
                 municipality: municipality
               })
             }
-            fs.writeFile('output/doc.json', JSON.stringify(result), function (e) {
+            fs.writeFile('output/response.json', JSON.stringify(result), function (e) {
               if (e) {
                 throw e;
               } else {
