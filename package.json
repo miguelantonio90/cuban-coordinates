@@ -1,0 +1,16 @@
+{
+  "name": "pareser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "download": "^6.2.5",
+    "fs": "0.0.1-security",
+    "xml-to-json": "^0.1.1"
+  }
+}
